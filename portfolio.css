@@ -1,5 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
 
+@import
+"https://fonts.googleapis.com/css?family=Dancing+Script";
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -43,57 +46,58 @@ body {
   color: #b3f6f6;
 }
 
-#introduction {
+#welcome-section {
   width: 100%;
-  height: 650px;
+  height: 100vh;
   background-color: #B9C0C1;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-#introduction h1 {
+#welcome-section h1 {
   align-self: center;
   font-size: 45px;
   margin: 0;
   color: white;
 }
 
-#introduction p {
+#welcome-section p {
   align-self: center;
   font-size: 20px;
   color: white;
 }
 #projects-wrap{
-  background-color: #C9FCFF;
-  
+  background-color: white;
+  padding: 40px 0px 40px 0px;
 }
 #projects-title{
   font-size: 50px;
   text-align: center;
-  padding: 40px 0px 30px 0px;
+  padding-bottom: 40px;
+  color: #179797;
 }
 
-#project_section{
+#projects{
  display: grid;
  grid-template-columns: 300px 300px;
  grid-template-rows: 300px 300px;
- grid-column-gap: 150px;
- grid-row-gap: 60px;
+ grid-column-gap: 50px;
+ grid-row-gap: 50px;
  justify-content: center;
 }
 #project-1{
-  background: LightSkyBlue;
+  background: #9AFADA;
 }
 
 #project-2{
-  background:LightSalmon;
+  background: #9AFADA;
 }
 #project-3{
-  background:PaleTurquoise;
+  background: #9AFADA;
 }
 #project-4{
-  background:PaleGreen;
+  background: #9AFADA;
 }
 .project_name{
   position: absolute;
@@ -101,9 +105,9 @@ body {
   z-index: 1;
   margin: 0;
 }
-.box {
+.project-tile {
   color: white;
-  border-color: black;
+  border-color: #179797;
   border-style: solid;
   position: relative;
   display: flex;
@@ -115,11 +119,11 @@ body {
   -o-transition: all .5s ease;
   transition: all .5s ease;
 }
-.box:hover {
+.project-tile:hover {
   cursor: pointer;
   background: transparent;
 }
-.box:hover .project_link{
+.project-tile:hover .project_link{
   opacity: 1;
 }
 
@@ -155,6 +159,7 @@ body {
 }
 #contact-wrapper{
   background: #FFF99A;
+  
 }
 #contact-grid{
   display: grid;
@@ -162,18 +167,79 @@ body {
   grid-template-rows: 300px;
   grid-column-gap: 100px;
   justify-content: center;
-  padding-top: 100px;
+  padding: 100px 0px 100px 0px;
 }
 #about{
-  background: LightSalmon;
+  background: white;
+  border-color: #51EFDF;
+  border-style: solid;
+  text-align: center;
+}
+#about h1{
+  font-family: 'Dancing Script', cursive;
+  padding: 15px 0px 15px 0px;
 }
 #contact{
-  background: LightSalmon;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
+  justify-content: center;
 }
 .mini-box{
   border-color: black;
   border-style: solid;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#github{
+  background: #51EFDF;
+}
+#linkedin{
+  background: #51EFDF;
+}
+#phone{
+  background: #51EFDF;
+}
+#email{
+  background: #51EFDF;
+}
+
+.contact-link {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.mini-box:hover {
+  cursor: pointer;
+  background: transparent;
+}
+
+.mini-box:hover .contact-link{
+  opacity: 1;
+  background: green;
+}
+.mini-box p{
+  z-index: 1;
+}
+#footer{
+  width: 100%;
+  height: 100px;
+  background: #22313F;
+  color: white;
 }
