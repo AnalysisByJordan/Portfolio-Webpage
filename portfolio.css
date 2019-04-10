@@ -82,8 +82,8 @@ body {
  display: grid;
  grid-template-columns: 300px 300px;
  grid-template-rows: 300px 300px;
- grid-column-gap: 50px;
- grid-row-gap: 50px;
+ grid-column-gap: 200px;
+ grid-row-gap: 100px;
  justify-content: center;
 }
 #project-1{
@@ -186,7 +186,21 @@ body {
   justify-content: center;
 }
 .mini-box{
-  border-color: black;
+  border-color: #FFF99A;
+  border-style: solid;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.mini-box-contact{
+  border-color: #FFF99A;
   border-style: solid;
   color: white;
   display: flex;
@@ -234,8 +248,26 @@ body {
   opacity: 1;
   background: green;
 }
-.mini-box p{
+.mini-box-contact:hover .contact-link{
+  opacity: 1;
+  background: blue;
+}
+
+#github p{
   z-index: 1;
+}
+#linkedin p{
+  z-index: 1;
+}
+#phone_email{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  top: 50px;
+  text-decoration: none;
 }
 #footer{
   width: 100%;
