@@ -159,7 +159,7 @@ body {
   background: rgba(0,0,0,.3);
 }
 #contact-wrapper{
-  background: #FFF99A;
+  background: #F2F0EF;
   
 }
 #contact-grid{
@@ -188,7 +188,7 @@ body {
   font-size: 20px;
 }
 .mini-box{
-  border-color: #FFF99A;
+  border-color: #F2F0EF;
   border-style: solid;
   color: white;
   display: flex;
@@ -202,7 +202,7 @@ body {
   transition: all .5s ease;
 }
 .mini-box-contact{
-  border-color: #FFF99A;
+  border-color: #F2F0EF;
   border-style: solid;
   color: white;
   display: flex;
