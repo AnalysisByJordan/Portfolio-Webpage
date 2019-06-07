@@ -1,7 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Roboto";
 
-@import
-"https://fonts.googleapis.com/css?family=Dancing+Script";
+@import "https://fonts.googleapis.com/css?family=Dancing+Script";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -14,8 +13,8 @@ body {
 #header {
   position: fixed;
   width: 100%;
-  background-color: #179797;
-  height: 65px;
+  background-color: #000628;
+  height: 50px;
   top: 0;
   left: 0;
   display: flex;
@@ -29,82 +28,108 @@ body {
 #navbar ul {
   list-style-type: none;
   display: flex;
+  
 }
 #navbar li {
-  font-size: 25px;
+  font-size: 20px;
+  padding-right: 30px;
 }
 
 #navbar li a {
   text-decoration: none;
   color: white;
   display: block;
-  padding: 18px 45px 18px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
 }
 
 #navbar li a:hover {
-  background-color: #0a5252;
-  color: #b3f6f6;
+  color: #f05545;
 }
 
 #welcome-section {
   width: 100%;
   height: 100vh;
-  background-color: #B9C0C1;
+  background-color: #f05545;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
 #welcome-section h1 {
   align-self: center;
   font-size: 60px;
-  margin: 0;
+  margin-top: 150px;
   color: white;
 }
-
 
 #welcome-section p {
   align-self: center;
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 85px;
   color: white;
+  text-align: center;
+  width: 450px;
 }
-#projects-wrap{
+#apps-wrap{
   background-color: white;
+  margin-top: 50px;
+}
+#projects-wrap {
+  background-color: #f1f0ef;
   padding: 55px 0px 55px 0px;
 }
-#projects-title{
+.title {
   font-size: 50px;
   text-align: center;
   padding-bottom: 40px;
-  color: #179797;
+  color: #000628;
+}
+#app-1{
+  background: #86dd8a;
+}
+#apps{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 300px;
+  justify-content: center;
+  padding-bottom: 55px;
 }
 
-#projects{
- display: grid;
- grid-template-columns: 300px 300px;
- grid-template-rows: 300px 300px;
- grid-column-gap: 200px;
- grid-row-gap: 100px;
- justify-content: center;
+#projects {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-column-gap: 200px;
+  grid-row-gap: 100px;
+  justify-content: center;
 }
-#project-1{
-  background: #9AFADA;
+#project-1 {
+  background: #ff8871;
 }
-
-#project-2{
-  background: #9AFADA;
+#project-2 {
+  background: #ff8871;
 }
-#project-3{
-  background: #9AFADA;
+#project-3 {
+  background: #ff8871;
 }
-#project-4{
-  background: #9AFADA;
+#project-4 {
+  background: #ff8871;
 }
-.project_name{
+.project_name {
   position: absolute;
   font-size: 30px;
-  z-index: 1;
+  z-index: 0;
   margin: 0;
+  margin-top: 20px;
+}
+.project_description{
+  margin-top: 40px;
+  text-align: center;
+  margin: auto;
 }
 .project-tile {
   color: white;
@@ -113,18 +138,17 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-   -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .project-tile:hover {
   cursor: pointer;
   background: transparent;
 }
-.project-tile:hover .project_link{
+.project-tile:hover .project_link {
   opacity: 1;
 }
 
@@ -134,11 +158,11 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .project_image {
   width: 100%;
@@ -147,7 +171,7 @@ body {
   position: relative;
 }
 .project_link:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -156,77 +180,67 @@ body {
   margin: auto;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.3);
+  background: rgba(0, 0, 0, 0.3);
 }
-#contact-wrapper{
-  background: #F2F0EF;
-  
+#contact-wrapper {
+  background: #e7e6e5;
+  padding-top: 50px;
 }
-#contact-grid{
+#contact-grid {
   display: grid;
-  grid-template-columns: 300px 300px;
+  grid-template-columns: 300px;
   grid-template-rows: 300px;
-  grid-column-gap: 100px;
   justify-content: center;
-  padding: 100px 0px 100px 0px;
+  padding-bottom: 50px;
 }
-#about{
-  background: white;
-  border-color: #51EFDF;
-  border-style: solid;
-  text-align: center;
-}
-#about h1{
-  font-family: 'Dancing Script', cursive;
-  padding: 15px 0px 15px 0px;
-}
-#contact{
+
+#contact {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   justify-content: center;
   font-size: 20px;
 }
-.mini-box{
-  border-color: #F2F0EF;
+.mini-box {
+  border-color: #f2f0ef;
   border-style: solid;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
-.mini-box-contact{
-  border-color: #F2F0EF;
+.mini-box-contact {
+  border-color: #f2f0ef;
   border-style: solid;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-#github{
-  background: #51EFDF;
+#github {
+  background: #f05545;
 }
-#linkedin{
-  background: #51EFDF;
+#linkedin {
+  background: #f05545;
 }
-#phone{
-  background: #51EFDF;
+#phone {
+  background: #f05545;
 }
-#email{
-  background: #51EFDF;
+#email {
+  background: #f05545;
 }
 
 .contact-link {
@@ -235,33 +249,33 @@ body {
   width: 100%;
   height: 100%;
   opacity: 0;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .mini-box:hover {
   cursor: pointer;
   background: transparent;
 }
 
-.mini-box:hover .contact-link{
+.mini-box:hover .contact-link {
   opacity: 1;
   background: green;
 }
-.mini-box-contact:hover .contact-link{
+.mini-box-contact:hover .contact-link {
   opacity: 1;
   background: blue;
 }
 
-#github p{
+#github p {
   z-index: 1;
 }
-#linkedin p{
+#linkedin p {
   z-index: 1;
 }
-#phone_email{
+#phone_email {
   display: flex;
   justify-content: center;
   position: relative;
@@ -271,22 +285,25 @@ body {
   top: 50px;
   text-decoration: none;
 }
-#footer{
+#footer {
   width: 100%;
   height: 80px;
-  background: #22313F;
+  background: #22313f;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 980px) {
-  #navbar li{
+  #navbar li {
     font-size: 40px;
   }
-  
+
   #welcome-section h1 {
     font-size: 140px;
   }
-  
+
   #welcome-section p {
     font-size: 70px;
   }
@@ -301,4 +318,3 @@ body {
     font-size: 21px;
   }
 }
-

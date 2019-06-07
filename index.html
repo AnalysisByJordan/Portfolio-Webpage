@@ -1,107 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="portfolio.css" type="text/css" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="portfolio.css" type="text/css">
-</head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <ul>
+          <li><a class="nav-link" href="#welcome-section">About</a></li>
+          <li>
+            <a
+              class="nav-link"
+              href="
+#projects-wrap"
+              >Projects</a
+            >
+          </li>
+          <li><a class="nav-link" href="#contact-grid">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header id="header">
-    <nav id="navbar">
-      <ul>
-        <li><a class="nav-link" href="#welcome-section">Introduction</a></li>
-        <li><a class="nav-link" href="
-#projects-wrap">Projects</a></li>
-        <li><a class="nav-link" href="#contact-grid">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div id="welcome-section">
-    <h1>Jordan Robey</h1>
-    <p>Web Developer</p>
-  </div>
-
-  <div id="projects-wrap">
-    <h1 id="projects-title">Projects</h1>
-
-    <div id=projects>
-      <div id="project-1" class="project-tile">
-        <p class="project_name">Tribute Page</p>
-        <a href="https://codepen.io/analysisbyjordan/pen/GevqzV" class="project_link" target="_blank">
-          <img
-            src="https://lh3.googleusercontent.com/Vqh4-cxlZpFAfNuBtnuUOL8FoN8uewdA65YheEdtnH17kOcCdMmxQU2WhG-9y5Q0nNQKrfSP-S-4FSy437nz1jExKvedkrAUIjCsHDK4nCxI4MMvrYzGh64MikCynN-mki8OojJa=w2400"
-            alt="" class="project_image">
-        </a>
-      </div>
-
-      <div id="project-2" class="project-tile">
-        <p class="project_name">Survey Form</p>
-        <a href="https://codepen.io/analysisbyjordan/pen/GeMMKq" class="project_link" target="_blank">
-          <img
-            src="https://lh3.googleusercontent.com/P5cECtct6ayBoy010ZdqB7ZTgZDYDluao4GWiCCjZBhtU7oxQpZg9hruTjbdjRD0AXjiP54qRrHKHDDvhZOyhwrwCY7qn888cwxqImfNOLdXGFFE24GeSio3mg5su5vFtslx6Xjw=w2400"
-            alt="" class="project_image">
-        </a>
-      </div>
-
-      <div id="project-3" class="project-tile">
-        <p class="project_name">Product Landing</p>
-        <a href="https://codepen.io/analysisbyjordan/pen/pYKbPw" class="project_link" target="_blank">
-          <img
-            src="https://lh3.googleusercontent.com/dJJ-Rw7pX-wSAh68l9TUl8mJO9ozA1dFga_07WrUi3M4H9Y3qrs69pWF5uTGppmDO7FpEatE9ae_ePdFjymYvK1ELlVglBAFoJR7HL3j-NHahaqbysBBotGgmMm6MiFLn6jwt_yU=w2400"
-            alt="" class="project_image">
-        </a>
-      </div>
-
-      <div id="project-4" class="project-tile">
-        <p class="project_name">Technical Document</p>
-        <a href="https://codepen.io/analysisbyjordan/pen/wOLMEy" class="project_link" target="_blank">
-          <img
-            src="https://lh3.googleusercontent.com/LllVjwhMqRvvuHGAhU6PjA_6nKkiU_jyqqAzKgsANwqMebaClsuq2lCeFUnanGlRWkmcplAym0-MR2DMkfEVcwqKMncm_sOtoeW3RaeHOHZZQarx2jdsG6G_OzAg4Lsi6mAthiBF=w2400"
-            alt="" class="project_image">
-        </a>
-      </div>
+    <div id="welcome-section">
+      <h1>Jordan Robey</h1>
+      <p>Hello! I am a recent graduate of Virginia Tech's 
+        Industrial and System's Engineering department, and I am a passionate web developer! 
+        Throughout this website you can find projects that I have worked on, as well as links 
+        to my professional sites.</p>
     </div>
-  </div>
 
-  <div id="contact-wrapper">
-    <div id="contact-grid">
+    <div id="apps-wrap">
+        <h1 class="title">App</h1>
+        <div id="apps">
+            <div id="app-1" class="project-tile">
+              <p class="project_name">The Goal</p>
+              <p class = "project_description">A web application that uses HTML5/CSS/Javascript and a 
+                dash of local storage to help users define a goal, break that goal down into major and minor steps,
+                then check off mile stones as they progress and visualize their progress!
+              </p>
+              <a
+                href="https://analysisbyjordan.github.io/Goal-Web-App-V2/"
+                class="project_link"
+                target="_blank"
+              >
+                <img
+                  src="https://lh3.googleusercontent.com/nwuaPOsQbOjf4jwLIHvEEhww3G6sg5_nhcJKtGb7A62to-AqoF4CkFaHJ0kr5OmXdnK1StXNESwq7Lh5spwXUP1ios5J9mCsmZwmXqAMi3swe5YMOdLgm5Fj19PN95L4EBfZOFqY=w2400"
+                  alt=""
+                  class="project_image"
+                />
+              </a>
+            </div>
+    </div>
 
-      <div id="about">
-        <h1>About</h1>
-        <p>Hello! My name is Jordan Robey, I am a soon to be graduate of Virginia Tech's Industrial and System's
-          Engineering department, and I am a passionate web developer!
-          Throughout this website you can find projects that I am working on, as well as links to my professional sites.
-          Please don't hesitate to reach
-          out to me with any questions or concerns! </p>
-      </div>
+    <div id="projects-wrap">
+      <h1 class="title">Pages</h1>
 
-      <div id="contact">
-
-        <div id="github" class="mini-box">
-          <p>Github</p><a href="https://github.com/AnalysisByJordan/" target="_blank" class="contact-link"></a>
-        </div>
-
-        <div id="linkedin" class="mini-box">
-          <p>LinkedIn</p><a href="https://linkedin.com/in/jordan-robey" target="_blank" class="contact-link"></a>
-        </div>
-
-        <div id="phone" class="mini-box-contact">
-          <p>Phone</p><a class="contact-link">
-            <p id="phone_email">703-268-1857</p>
+      <div id="projects">
+        <div id="project-1" class="project-tile">
+          <p class="project_name">Tribute Page</p>
+          <p class = "project_description">A beginning project in which I designed a tribute page for Sir Christopher Lee,
+            outlining his major milestones and accomplishments. 
+            </p>
+          <a
+            href="https://codepen.io/analysisbyjordan/pen/GevqzV"
+            class="project_link"
+            target="_blank"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/--0QoDl-8yIdnO9A-0ZmA17CRCg-EUJ1elf3TeKlnV-nxlv7M-P0YBz40stSwk5cHD582AB-g2zWqimCPP7q1PDQ09ZWFNzB0YoIP3NIaFaiGiF-cBZtmIxuOlBB3UcBiCLaK1Js=w2400"
+              alt=""
+              class="project_image"
+            />
           </a>
         </div>
 
-        <div id="email" class="mini-box-contact">
-          <p>Email</p><a class="contact-link">
-            <p id="phone_email">rjordan7@vt.edu</p>
+        <div id="project-2" class="project-tile">
+          <p class="project_name">Survey Form</p>
+          <p class = "project_description">A form page that acts as a survey for basic information and coding experience. 
+              </p>
+          <a
+            href="https://codepen.io/analysisbyjordan/pen/GeMMKq"
+            class="project_link"
+            target="_blank"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/YfhkcI3ZxpudMSW_NGB-3Sj15AW7Noxby1zUeEdCy4JrQs5TU6UE9369WaaYEr8wSbuGmzh75a6T8Gc-5PsvxBgNs9GsZQQ-PlI8qKj0Pp5tTzg_64WvyjRaGFrVXvWJFXg0QnyI=w2400"
+              alt=""
+              class="project_image"
+            />
+          </a>
+        </div>
+
+        <div id="project-3" class="project-tile">
+          <p class="project_name">Product Landing</p>
+          <p class = "project_description">A product page that advertises watches for the fabled Blue Ridge Watches 
+            company.  
+          </p>
+          <a
+            href="https://codepen.io/analysisbyjordan/pen/pYKbPw"
+            class="project_link"
+            target="_blank"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/nVHPxcHCSigl45n9A4AQZRv9RhOnkANWea_l--H88QITz1TN0jMpIqWMiPiqhL4Z8_6pt3lFVVO0_PH27ZM6sY_xK4DY99f-mattxrF3WJ-H3ALRaOStMteaBtMjjI_WGVcPHutJ=w2400"
+              alt=""
+              class="project_image"
+            />
+          </a>
+        </div>
+
+        <div id="project-4" class="project-tile">
+          <p class="project_name">Technical Document</p>
+          <p class = "project_description">A technical page that that I built to learn more about the React 
+            Javascript library, as well as to develop a page that acts as an eduational resource for the framework.
+            Two birds with one stone!
+          </p>
+          <a
+            href="https://codepen.io/analysisbyjordan/pen/wOLMEy"
+            class="project_link"
+            target="_blank"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/OJkjInv7N_Y-uVDxGn1r1M5CRlJBA64CaKnX-eXz3g3L1SDeJ4V72KtpAyC4ZzLj3Q_Ou4crSB5ZpY-IQbgYyW8fQ2AhaNbD_nkTNujiAiLRAzzFYjCWYoOPROTDhv_YzkPev66b=w2400"
+              alt=""
+              class="project_image"
+            />
           </a>
         </div>
       </div>
     </div>
 
-  </div>
-  <div id="footer"></div>
-</body>
+    <div id="contact-wrapper">
+        <h1 class="title">Contact</h1>
+      <div id="contact-grid">
+        <div id="contact">
+          <div id="github" class="mini-box">
+            <p>Github</p>
+            <a
+              href="https://github.com/AnalysisByJordan/"
+              target="_blank"
+              class="contact-link"
+            ></a>
+          </div>
 
+          <div id="linkedin" class="mini-box">
+            <p>LinkedIn</p>
+            <a
+              href="https://linkedin.com/in/jordan-robey"
+              target="_blank"
+              class="contact-link"
+            ></a>
+          </div>
+
+          <div id="phone" class="mini-box-contact">
+            <p>Phone</p>
+            <a class="contact-link">
+              <p id="phone_email">703-268-1857</p>
+            </a>
+          </div>
+
+          <div id="email" class="mini-box-contact">
+            <p>Email</p>
+            <a class="contact-link">
+              <p id="phone_email">rjordan7@vt.edu</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Jordan Robey   |   2019</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="Portfolio.js"></script>
+  </body>
 </html>
