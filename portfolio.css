@@ -285,7 +285,8 @@ body {
 }
 #footer {
   width: 100%;
-  height: 80px;
+  height: 6rem;
+  font-size: 2rem;
   background: #22313f;
   color: white;
   display: flex;
@@ -295,29 +296,46 @@ body {
 
 @media (max-width: 980px) {
   #header {
-    height: 5rem;
+    height: 6rem;
   }
   #navbar li {
-    font-size: 2rem;
-    padding-right: 2.5rem;
+    font-size: 4rem;
+    padding-right: 5.5rem;
   }
 
   #welcome-section h1 {
-    font-size: 3rem;
+    font-size: 9rem;
   }
 
   #welcome-section p {
-    font-size: 1.2rem;
+    font-size: 3.5rem;
     width: 60%;
-    margin-top: 20%;
+    margin-top: 25%;
   }
 
   #projects {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 35rem;
+    grid-template-rows: 35rem 35rem 35rem 35rem;
     grid-column-gap: 200px;
     grid-row-gap: 100px;
     justify-content: center;
+  }
+
+  #apps {
+    display: grid;
+    grid-template-columns: 35rem;
+    grid-template-rows: 35rem;
+    justify-content: center;
+    padding-bottom: 5rem;
+  }
+  .title{
+    font-size: 8rem;
+  }
+  .project_name{
+    font-size: 3.5rem;
+  }
+  .project_description{
+    font-size: 2rem;
   }
 }
