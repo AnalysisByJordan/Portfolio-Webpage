@@ -286,7 +286,7 @@ body {
 #footer {
   width: 100%;
   height: 6rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: #22313f;
   color: white;
   display: flex;
@@ -337,5 +337,6 @@ body {
   }
   .project_description{
     font-size: 2rem;
+
   }
 }
