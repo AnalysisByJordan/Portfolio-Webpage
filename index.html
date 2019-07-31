@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="portfolio.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/f9782106bc.js"></script>
   </head>
 
   <body>
@@ -23,22 +25,81 @@
     </header>
 
     <div id="welcome-section">
-      <h1>Hello, I'm Jordan Robey</h1>
-      <p>I am a recent graduate of Virginia Tech's 
-        Industrial and System's Engineering department, and I am a passionate web developer! 
-        Throughout this website you can find projects that I have worked on, as well as links 
-        to my professional sites.</p>
+      <img
+                  src="https://lh3.googleusercontent.com/FS4l2g5zv4y2Kyn04ZXVr53sp14lhOU1Xa42nOymJTIdSeEbqywcIQ8ABvNhRtRs3rR0AYus8kNGoDcKZHHmvXQPbyqvaBkUetgE7a_ovACrE3H0AIrfEtdWQrQV2Z5Y1eo70Sa3TQ=w2400"
+                  alt=""
+                  id="cover_image"
+                />
+                <h1>Jordan Robey</h1>
+    </div>
+
+    <div id ="about">
+      <div id = "header_color">
+      <h1 style = "color: white; font-size: 4rem">About</h1>
+      <p style = "color: white; font-size: 1.5rem">Learn more about me!</p>
+    </div>
+      <div id = "about_description">
+      <h1>Bio</h1>
+      <div id = "right-border"></div>
+      <p>I'm a US based web developer,
+        I'm always looking for an opportunity to code and learn 
+        new things. Before becoming a developer I graduated from Virginia Tech with a Bachelor's in Industrial
+        and System's Engineering. During my studies I learned a lot about  In my spare 
+        time I'm usually building things and searching for new skills to learn.
+        I also speak Spanish, enjoy watching movies and traveling to exciting 
+        places.</p>
+      </div>
+      <div id = skills_description>
+        <h1>Skills</h1>
+        <div id = "right-border"></div>
+        <ul>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>React</li>
+          <li>Jquery</li>
+          <li>Git</li>
+          <li>Github</li>
+        </ul>
+      </div>
+
+      <div id = "icon_description">
+        <div id = "clean_code">
+          <div id = "circle">
+      <i class="material-icons" style="font-size:82px;">
+          code
+          </i>
+        </div>
+          <h3>Code</h3>
+          <p>I care about writing clean, simple and maintainable code.</p>
+        </div>
+
+        <div style = "width: 20%"></div>
+        <div id = "responsive_code">
+          <div id = "circle">
+      <i class="material-icons" style="font-size:64px;">
+          important_devices
+          </i>
+        </div>
+          <h3>Responsive</h3>
+          <p>It it important that my projects are responsive to varying screen sizes.</p>
+        </div>
     </div>
 
     <div id="apps-wrap">
-        <h1 class="title">App</h1>
+        <div id = "header_color">
+        <h1 style = "color: white; font-size: 4rem">Portfolio</h1>
+        <p style = "color: white; font-size: 1.5rem">Take a look at some of my projects!</p>
+        </div>
         <div id="apps">
             <div id="app-1" class="project-tile">
+              <div class = "info">
               <p class="project_name">The Goal</p>
-              <p class = "project_description">A web application that uses HTML5/CSS/Javascript and a 
+              <p class = "project_description">A web and mobile responsive application that uses HTML5/CSS/Javascript and a 
                 dash of local storage to help users define a goal, break that goal down into major and minor steps,
-                then check off mile stones as they progress and visualize their progress!
-              </p>
+                then check off mile stones as they progress and visualize their progress!</p>
+              </div>
+                
               <a
                 href="https://analysisbyjordan.github.io/Goal-Web-App-V2/"
                 class="project_link"
@@ -51,92 +112,109 @@
                 />
               </a>
             </div>
-    </div>
 
-    <div id="projects-wrap">
-      <h1 class="title">Pages</h1>
+            <div id="app-2" class="project-tile">
+                <div class = "info">
+                <p class="project_name">Cash Register</p>
+                <p class = "project_description">A web and mobile responsive application that uses HTML5/CSS/Javascript and a 
+                  dash of local storage to help users define a goal, break that goal down into major and minor steps,
+                  then check off mile stones as they progress and visualize their progress!</p>
+                </div>
+                <a
+                  href="https://analysisbyjordan.github.io/Goal-Web-App-V2/"
+                  class="project_link"
+                  target="_blank"
+                >
+                  <img
+                    src="https://lh3.googleusercontent.com/rd-nIa0y4w5A9pal1hX1LsrfIMm5IhmJGKFrAt2M5HHhuDj8qQ99lzED9SnuQzLyXw4gxZSVrGnccCJFn17hXiIyW5mAkL38iWqYyM5XH06LTTwMJ6-2uJCmfbBOC04wRnQJOXUcsA=w2400"
+                    alt=""
+                    class="project_image"
+                  />
+                </a>
+              </div>
 
-      <div id="projects">
-        <div id="project-1" class="project-tile">
-          <p class="project_name">Tribute Page</p>
-          <p class = "project_description">A beginning project in which I designed a tribute page for Sir Christopher Lee,
-            outlining his major milestones and accomplishments. 
-            </p>
-          <a
-            href="https://codepen.io/analysisbyjordan/pen/GevqzV"
-            class="project_link"
-            target="_blank"
-          >
-            <img
-              src="https://lh3.googleusercontent.com/--0QoDl-8yIdnO9A-0ZmA17CRCg-EUJ1elf3TeKlnV-nxlv7M-P0YBz40stSwk5cHD582AB-g2zWqimCPP7q1PDQ09ZWFNzB0YoIP3NIaFaiGiF-cBZtmIxuOlBB3UcBiCLaK1Js=w2400"
-              alt=""
-              class="project_image"
-            />
-          </a>
-        </div>
+              <div id="project-1" class="project-tile">
+                  <p class="project_name">Tribute Page</p>
+                  <p class = "project_description">A beginning project in which I designed a tribute page for Sir Christopher Lee,
+                    outlining his major milestones and accomplishments. 
+                    </p>
+                  <a
+                    href="https://codepen.io/analysisbyjordan/pen/GevqzV"
+                    class="project_link"
+                    target="_blank"
+                  >
+                    <img
+                      src="https://lh3.googleusercontent.com/--0QoDl-8yIdnO9A-0ZmA17CRCg-EUJ1elf3TeKlnV-nxlv7M-P0YBz40stSwk5cHD582AB-g2zWqimCPP7q1PDQ09ZWFNzB0YoIP3NIaFaiGiF-cBZtmIxuOlBB3UcBiCLaK1Js=w2400"
+                      alt=""
+                      class="project_image"
+                    />
+                  </a>
+                </div>
 
-        <div id="project-2" class="project-tile">
-          <p class="project_name">Survey Form</p>
-          <p class = "project_description">A form page that acts as a survey for basic information and coding experience. 
-              </p>
-          <a
-            href="https://codepen.io/analysisbyjordan/pen/GeMMKq"
-            class="project_link"
-            target="_blank"
-          >
-            <img
-              src="https://lh3.googleusercontent.com/YfhkcI3ZxpudMSW_NGB-3Sj15AW7Noxby1zUeEdCy4JrQs5TU6UE9369WaaYEr8wSbuGmzh75a6T8Gc-5PsvxBgNs9GsZQQ-PlI8qKj0Pp5tTzg_64WvyjRaGFrVXvWJFXg0QnyI=w2400"
-              alt=""
-              class="project_image"
-            />
-          </a>
-        </div>
+                <div id="project-2" class="project-tile">
+                    <p class="project_name">Survey Form</p>
+                    <p class = "project_description">A form page that acts as a survey for basic information and coding experience. 
+                        </p>
+                    <a
+                      href="https://codepen.io/analysisbyjordan/pen/GeMMKq"
+                      class="project_link"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://lh3.googleusercontent.com/YfhkcI3ZxpudMSW_NGB-3Sj15AW7Noxby1zUeEdCy4JrQs5TU6UE9369WaaYEr8wSbuGmzh75a6T8Gc-5PsvxBgNs9GsZQQ-PlI8qKj0Pp5tTzg_64WvyjRaGFrVXvWJFXg0QnyI=w2400"
+                        alt=""
+                        class="project_image"
+                      />
+                    </a>
+                  </div>
 
-        <div id="project-3" class="project-tile">
-          <p class="project_name">Product Landing</p>
-          <p class = "project_description">A product page that advertises watches for the fabled Blue Ridge Watches 
-            company.  
-          </p>
-          <a
-            href="https://codepen.io/analysisbyjordan/pen/pYKbPw"
-            class="project_link"
-            target="_blank"
-          >
-            <img
-              src="https://lh3.googleusercontent.com/nVHPxcHCSigl45n9A4AQZRv9RhOnkANWea_l--H88QITz1TN0jMpIqWMiPiqhL4Z8_6pt3lFVVO0_PH27ZM6sY_xK4DY99f-mattxrF3WJ-H3ALRaOStMteaBtMjjI_WGVcPHutJ=w2400"
-              alt=""
-              class="project_image"
-            />
-          </a>
-        </div>
+                  <div id="project-3" class="project-tile">
+                      <p class="project_name">Product Landing</p>
+                      <p class = "project_description">A product page that advertises watches for the fabled Blue Ridge Watches 
+                        company.  
+                      </p>
+                      <a
+                        href="https://codepen.io/analysisbyjordan/pen/pYKbPw"
+                        class="project_link"
+                        target="_blank"
+                      >
+                        <img
+                          src="https://lh3.googleusercontent.com/nVHPxcHCSigl45n9A4AQZRv9RhOnkANWea_l--H88QITz1TN0jMpIqWMiPiqhL4Z8_6pt3lFVVO0_PH27ZM6sY_xK4DY99f-mattxrF3WJ-H3ALRaOStMteaBtMjjI_WGVcPHutJ=w2400"
+                          alt=""
+                          class="project_image"
+                        />
+                      </a>
+                    </div>
 
-        <div id="project-4" class="project-tile">
-          <p class="project_name">Technical Document</p>
-          <p class = "project_description">A technical page that that I built to learn more about the React 
-            Javascript library, as well as to develop a page that acts as an eduational resource for the framework.
-            Two birds with one stone!
-          </p>
-          <a
-            href="https://codepen.io/analysisbyjordan/pen/wOLMEy"
-            class="project_link"
-            target="_blank"
-          >
-            <img
-              src="https://lh3.googleusercontent.com/OJkjInv7N_Y-uVDxGn1r1M5CRlJBA64CaKnX-eXz3g3L1SDeJ4V72KtpAyC4ZzLj3Q_Ou4crSB5ZpY-IQbgYyW8fQ2AhaNbD_nkTNujiAiLRAzzFYjCWYoOPROTDhv_YzkPev66b=w2400"
-              alt=""
-              class="project_image"
-            />
-          </a>
-        </div>
-      </div>
+                    <div id="project-4" class="project-tile">
+                        <p class="project_name">Technical Document</p>
+                        <p class = "project_description">A technical page that that I built to learn more about the React 
+                          Javascript library, as well as to develop a page that acts as an eduational resource for the framework.
+                          Two birds with one stone!
+                        </p>
+                        <a
+                          href="https://codepen.io/analysisbyjordan/pen/wOLMEy"
+                          class="project_link"
+                          target="_blank"
+                        >
+                          <img
+                            src="https://lh3.googleusercontent.com/OJkjInv7N_Y-uVDxGn1r1M5CRlJBA64CaKnX-eXz3g3L1SDeJ4V72KtpAyC4ZzLj3Q_Ou4crSB5ZpY-IQbgYyW8fQ2AhaNbD_nkTNujiAiLRAzzFYjCWYoOPROTDhv_YzkPev66b=w2400"
+                            alt=""
+                            class="project_image"
+                          />
+                        </a>
+                      </div>
     </div>
 
     <div id="contact-wrapper">
-        <h1 class="title">Contact</h1>
+        <div id = "header_color">
+            <h1 style = "color: white; font-size: 4rem">Contact</h1>
+            <p style = "color: white; font-size: 1.5rem">Get in touch!</p>
+            </div>
       <div id="contact-grid">
         <div id="contact">
           <div id="github" class="mini-box">
-            <p>Github</p>
+              <i style = "z-index: 2" class="fab fa-github fa-5x"></i>
             <a
               href="https://github.com/AnalysisByJordan/"
               target="_blank"
@@ -145,7 +223,7 @@
           </div>
 
           <div id="linkedin" class="mini-box">
-            <p>LinkedIn</p>
+              <i style = "z-index: 2" class="fab fa-linkedin fa-5x"></i>
             <a
               href="https://linkedin.com/in/jordan-robey"
               target="_blank"
@@ -154,16 +232,16 @@
           </div>
 
           <div id="phone" class="mini-box-contact">
-            <p>Phone</p>
+              <i class="fas fa-phone fa-5x"></i>
             <a class="contact-link">
-              <p id="phone_email">703-268-1857</p>
+              <h3 id="phone_email">703-268-1857</h3>
             </a>
           </div>
 
           <div id="email" class="mini-box-contact">
-            <p>Email</p>
+              <i class="fas fa-envelope-square fa-5x"></i>
             <a class="contact-link">
-              <p id="phone_email">rjordan7@vt.edu</p>
+              <h3 id="phone_email">rjordan7@vt.edu</h3>
             </a>
           </div>
         </div>
