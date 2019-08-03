@@ -127,6 +127,7 @@ body {
 }
 #icon_description{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding-top: 5rem;
@@ -146,7 +147,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 20%;
-  
+  padding-right: 5%;
 }
 #responsive_code{
   display: flex;
@@ -154,7 +155,14 @@ body {
   align-items: center;
   justify-content: center;
   width: 20%;
-  
+  padding-right: 5%;
+}
+#education{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
 }
 #circle{
   border: thick solid #ff8c09;
@@ -176,37 +184,53 @@ body {
   margin-top: 50px;
 }
 
-#app-1 {
-  background: #80807e;
-  
-}
-#app-2{
-  background: #80807e;
-}
-#project-1 {
-  background: #80807e;
-}
-#project-2 {
-  background: #80807e;
-}
-#project-3 {
-  background: #80807e;
-}
-#project-4 {
-  background: #80807e;
-}
 #apps {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px;
-  grid-column-gap: 100px;
+  grid-template-columns: 350px 350px 350px;
+  grid-template-rows: 350px 350px;
+  grid-column-gap: 50px;
   grid-row-gap: 100px;
   justify-content: center;
   padding-top: 10%;
   padding-bottom: 10%;
   
 }
+#project-square{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+
+
+}
+.project-tile {
+  color: white;
+  border-color: black;
+  border-style: solid;
+  position: relative;
+  display: flex;
+  justify-content: center; 
+  height: 100%;
+}
+
+.project-tile:hover .info {
+  opacity: 1;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.project_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  
+}
 .project_name {
   position: absolute;
   font-size: 30px;
@@ -217,38 +241,27 @@ body {
   
 }
 .project_description {
-  margin-top: 40px;
+  padding-top: 3rem;
   text-align: center;
   margin: auto;
   
 }
-.project-tile {
-  color: white;
-  border-color: black;
-  border-style: solid;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.project-tile:hover {
-  cursor: pointer;
-  background: transparent;
-  
-}
-.project-tile:hover .info {
-  opacity: 1;
-  z-index: 1;
-}
+
 .info{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(181, 181, 181);
+  background: #404040;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .project_link {
@@ -257,20 +270,8 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
-.project_image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  
-}
-.project_link:after {
+.project_tile:after {
   content: "";
   position: absolute;
   top: 0;
@@ -281,6 +282,24 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(114, 114, 114, 0.3);
+}
+
+.project-tile a{
+    color: white
+}
+
+.git-symbol{
+  color: black;
+}
+
+.git-symbol:hover{
+  color: #ff8c09;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
 }
 #contact-wrapper {
   background: #e7e6e5;
